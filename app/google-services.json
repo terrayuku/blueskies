@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1060301547217",
+    "firebase_url": "https://blueskies-liberty.firebaseio.com",
+    "project_id": "blueskies-liberty",
+    "storage_bucket": "blueskies-liberty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060301547217:android:d6c8ac597fc50ef5",
+        "android_client_info": {
+          "package_name": "skies.blue.liberty.com.blueskies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060301547217-j2f1tcr4f5ruk9vie48vemerlu2tck0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "skies.blue.liberty.com.blueskies",
+            "certificate_hash": "cebbf677f1784cc1881d1f7d77de63cdd029e0a7"
+          }
+        },
+        {
+          "client_id": "1060301547217-fp5rmhabssguu8rsr5m1199hktu8b9aa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv7btiJgJI6572bw0V0absQ6FOJK-6P7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060301547217-fp5rmhabssguu8rsr5m1199hktu8b9aa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

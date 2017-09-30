@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
+
+import skies.blue.liberty.com.blueskies.models.Utils;
 
 /**
  * Created by simthembile on 2017/09/30.
@@ -11,10 +14,15 @@ import android.view.View;
 
 public class Landing extends AppCompatActivity {
 
+    TextView userEmail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
+
+        userEmail = (TextView)findViewById(R.id.userEmail);
+        userEmail.setText(Utils.readSharedSetting(getApplicationContext(), "email", "liberty-user"));
     }
 
     public void design_best_life(View view) {

@@ -92,5 +92,14 @@
             android:layout_marginLeft="28dp"
             android:layout_marginStart="28dp" />
 
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4" />
+
     </RelativeLayout>
 </LinearLayout>
