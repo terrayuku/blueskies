@@ -52,7 +52,7 @@ public class UserDashboard extends AppCompatActivity{
 
         dataset.setColors(ColorTemplate.COLORFUL_COLORS);
 
-        ArrayList<String> labels = new ArrayList<String>();
+        ArrayList<String> labels = new ArrayList<>();
         labels.add("January");
         labels.add("February");
         labels.add("March");
@@ -62,9 +62,6 @@ public class UserDashboard extends AppCompatActivity{
 
         final BarChart chart = new BarChart(context);
         setContentView(chart);
-
-        LimitLine l1 = new LimitLine(5f);
-        LimitLine l2 = new LimitLine(8f);
 
         BarData data = new BarData(labels, dataset);
 
@@ -84,5 +81,7 @@ public class UserDashboard extends AppCompatActivity{
         });
 
         chart.setDescription("Number of Products");
+        chart.setDescriptionTextSize(20f);
+
     }
 }

@@ -12,8 +12,8 @@
     <RelativeLayout
         android:layout_width="377dp"
         android:layout_height="501dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="3dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="5dp"
         >
 
         <ImageView
@@ -40,10 +40,10 @@
             android:textColor="@color/cardview_light_background"
             tools:layout_editor_absoluteX="216dp"
             tools:layout_editor_absoluteY="-64dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="16dp"
             android:layout_above="@+id/login_button"
-            android:layout_toRightOf="@+id/lblBenefits"
-            android:layout_toEndOf="@+id/lblBenefits" />
+            android:layout_alignRight="@+id/lblWelcome"
+            android:layout_alignEnd="@+id/lblWelcome" />
 
         <Button
             android:id="@+id/login"
@@ -54,12 +54,12 @@
             android:text="Login"
             android:textColor="@color/cardview_light_background"
             android:typeface="sans"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_alignBaseline="@+id/join"
             android:layout_alignBottom="@+id/join"
-            android:layout_toRightOf="@+id/join"
-            android:layout_toEndOf="@+id/join"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp" />
+            android:layout_toRightOf="@+id/lblWelcome"
+            android:layout_toEndOf="@+id/lblWelcome" />
 
         <TextView
             android:id="@+id/lblWelcome"
@@ -76,31 +76,18 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-        <TextView
-            android:id="@+id/lblBenefits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Consent"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/textView3"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_marginTop="15dp" />
-
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="34dp"
+            android:layout_marginBottom="54dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/login"
-            android:layout_alignEnd="@+id/login"
             android:layout_alignLeft="@+id/join"
-            android:layout_alignStart="@+id/join" />
+            android:layout_alignStart="@+id/join"
+            android:layout_alignRight="@+id/login"
+            android:layout_alignEnd="@+id/login" />
 
         <TextView
             android:id="@+id/textView3"
@@ -113,17 +100,6 @@
             android:text="By using this application you give Liberty Group right to garther and use your information for its internal (and sub-contracting companies) research and promotions lawfully."
             android:textColor="@color/cardview_dark_background"
             android:typeface="serif" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif"
-            android:text="By Loging in and Joining Liberty X an application of Liberty Group you agree in receiving emails, phone call and SMS's from Liberty X for future information unless you requested a change in consent."
-            android:layout_below="@+id/lblBenefits"
-            android:layout_alignLeft="@+id/lblBenefits"
-            android:layout_alignStart="@+id/lblBenefits" />
-
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
