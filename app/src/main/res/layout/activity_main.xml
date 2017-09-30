@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skies.blue.liberty.com.blueskies.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="377dp"
+        android:layout_height="501dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-8dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/lblWelcome"
+            android:layout_alignStart="@+id/lblWelcome" />
+
+        <Button
+            android:id="@+id/join"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="87dp"
+            android:layout_toLeftOf="@+id/lblBenefits"
+            android:layout_toStartOf="@+id/lblBenefits"
+            android:background="@color/colorPrimaryDark"
+            android:lineSpacingExtra="8sp"
+            android:onClick="register"
+            android:text="Join Liberty"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="-64dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="login"
+            android:text="Login"
+            android:typeface="sans"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_alignBaseline="@+id/join"
+            android:layout_alignBottom="@+id/join"
+            android:layout_toRightOf="@+id/join"
+            android:layout_toEndOf="@+id/join" />
+
+        <TextView
+            android:id="@+id/lblWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="Welcome" />
+
+        <TextView
+            android:id="@+id/lblBenefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblWelcome"
+            android:layout_alignStart="@+id/lblWelcome"
+            android:layout_centerVertical="true"
+            android:text="Benefits" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
