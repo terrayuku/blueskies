@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,46 +12,46 @@
             android:id="@+id/ckCar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="21dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="41dp"
-            android:text="Car" />
+            android:text="Car"
+            android:layout_below="@+id/ckPermanent"
+            android:layout_alignLeft="@+id/ckPermanent"
+            android:layout_alignStart="@+id/ckPermanent"
+            android:layout_marginTop="17dp" />
 
         <CheckBox
             android:id="@+id/ckHouse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Owining a House ?"
+            android:layout_below="@+id/ckCar"
             android:layout_alignLeft="@+id/ckCar"
             android:layout_alignStart="@+id/ckCar"
-            android:layout_below="@+id/ckCar"
-            android:layout_marginTop="13dp"
-            android:text="Owining a House ?" />
-
-        <CheckBox
-            android:id="@+id/ckPermanent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/ckHouse"
-            android:layout_alignStart="@+id/ckHouse"
-            android:layout_below="@+id/ckHouse"
-            android:layout_marginTop="16dp"
-            android:text="Permanent" />
+            android:layout_marginTop="22dp" />
 
         <Button
             android:id="@+id/btnLife"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ckPermanent"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="46dp"
-            android:layout_toEndOf="@+id/ckCar"
-            android:layout_toRightOf="@+id/ckCar"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="blue_life"
-            android:text="Blue Life" />
+            android:text="Blue Life"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ckCar"
+            android:layout_toEndOf="@+id/ckCar"
+            android:layout_marginBottom="171dp" />
+
+        <CheckBox
+            android:id="@+id/ckPermanent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permanent"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="43dp"
+            android:layout_marginEnd="43dp" />
     </RelativeLayout>
 </LinearLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,19 +19,21 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="37dp"
             android:text="Dream Home"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
             android:layout_marginTop="17dp"
             android:ems="10"
             android:hint="3 Bed Room House"
             android:inputType="textPersonName"
-            android:layout_below="@+id/textView"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView" />
+            android:textColor="@color/cardview_light_background" />
 
         <TextView
             android:id="@+id/textView2"
@@ -41,6 +44,7 @@
             android:layout_below="@+id/txtHome"
             android:layout_marginTop="30dp"
             android:text="Health"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
 
         <EditText
@@ -64,33 +68,35 @@
             android:layout_below="@+id/txtHealth"
             android:layout_marginTop="37dp"
             android:text="Financial"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtFinance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Retirement Policy"
-            android:inputType="textPersonName"
-            android:layout_below="@+id/textView4"
-            android:layout_alignLeft="@+id/textView4"
-            android:layout_alignStart="@+id/textView4" />
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginBottom="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_toEndOf="@+id/txtFinance"
+            android:layout_toRightOf="@+id/txtFinance"
             android:background="@color/colorPrimaryDark"
             android:onClick="profile"
             android:text="Claim It!"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/txtFinance"
-            android:layout_toEndOf="@+id/txtFinance"
-            android:layout_marginLeft="28dp"
-            android:layout_marginStart="28dp" />
+            android:textColor="@color/cardview_light_background" />
 
         <TextView
             android:id="@+id/userEmail"

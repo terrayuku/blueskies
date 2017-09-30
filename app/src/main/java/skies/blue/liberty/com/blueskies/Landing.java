@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import skies.blue.liberty.com.blueskies.analytics.UserDashboard;
 import skies.blue.liberty.com.blueskies.models.Utils;
 
 /**
@@ -38,8 +39,8 @@ public class Landing extends AppCompatActivity {
     }
 
     public void bestLife(View view) {
-        Intent intent = new Intent(this, BestLife.class);
-        intent.putExtra("Design", "Design");
+        Intent intent = new Intent(this, UserDashboard.class);
+        intent.putExtra("UserDashboard", "UserDashboard");
         startActivity(intent);
     }
 

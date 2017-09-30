@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
             android:layout_marginStart="34dp"
             android:layout_marginTop="76dp"
             android:text="Email "
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
 
         <EditText
@@ -36,12 +38,13 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:textSize="24sp"
-            android:layout_below="@+id/user_email"
             android:layout_alignLeft="@+id/user_email"
             android:layout_alignStart="@+id/user_email"
-            android:layout_marginTop="21dp" />
+            android:layout_below="@+id/user_email"
+            android:layout_marginTop="21dp"
+            android:text="Password"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtPassword"
@@ -62,6 +65,7 @@
             android:layout_below="@+id/txtPassword"
             android:layout_marginTop="21dp"
             android:text="Confirm Password"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
 
         <EditText
@@ -87,7 +91,8 @@
             android:layout_marginRight="18dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="btnJoin"
-            android:text="Join" />
+            android:text="Join"
+            android:textColor="@color/cardview_light_background" />
 
         <TextView
             android:id="@+id/txtError"

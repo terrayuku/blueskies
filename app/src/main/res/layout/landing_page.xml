@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -9,61 +10,75 @@
 
         <Button
             android:id="@+id/bntDesign"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="51dp"
+            android:layout_marginTop="25dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="design_best_life"
-            android:text="Design Your Best Life" />
+            android:text="Design Your Best Life"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/userEmail"
+            android:layout_alignRight="@+id/btnReward"
+            android:layout_alignEnd="@+id/btnReward"
+            android:layout_alignLeft="@+id/btnBestLife"
+            android:layout_alignStart="@+id/btnBestLife" />
 
         <Button
             android:id="@+id/btnCompleteProfile"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bntDesign"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="31dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="completeProfile"
-            android:text="Complete Profile" />
+            android:text="Complete Profile"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/bntDesign"
+            android:layout_alignRight="@+id/bntDesign"
+            android:layout_alignEnd="@+id/bntDesign"
+            android:layout_alignLeft="@+id/btnBestLife"
+            android:layout_alignStart="@+id/btnBestLife" />
 
         <Button
             android:id="@+id/btnBestLife"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCompleteProfile"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="29dp"
+            android:layout_marginTop="31dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="bestLife"
-            android:text="Way to your best life" />
+            android:text="Way to your best life"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/btnCompleteProfile"
+            android:layout_alignLeft="@+id/btnComm"
+            android:layout_alignStart="@+id/btnComm"
+            android:layout_alignRight="@+id/btnComm"
+            android:layout_alignEnd="@+id/btnComm" />
 
         <Button
             android:id="@+id/btnComm"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/btnBestLife"
-            android:layout_marginTop="37dp"
+            android:layout_marginTop="40dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="comm"
-            android:text="Communication" />
+            android:text="Communication"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/btnBestLife"
+            android:layout_alignRight="@+id/btnReward"
+            android:layout_alignEnd="@+id/btnReward"
+            android:layout_alignLeft="@+id/btnReward"
+            android:layout_alignStart="@+id/btnReward" />
 
         <Button
             android:id="@+id/btnReward"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/btnComm"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="39dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="reward"
-            android:text="Rewards and Incentives" />
+            android:text="Rewards and Incentives"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/btnComm"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/userEmail"

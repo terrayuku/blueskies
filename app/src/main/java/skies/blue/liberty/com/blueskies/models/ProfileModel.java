@@ -10,9 +10,10 @@ public class ProfileModel {
     private String proffesion;
     private String annualIncome;
     private String email;
-    private boolean car;
-    private boolean owningHouse;
-    private boolean permanent;
+    private boolean smoking;
+    private boolean drinking;
+    private boolean dread;
+    private  boolean disable;
 
     public ProfileModel() {
     }
@@ -25,15 +26,16 @@ public class ProfileModel {
         this.email = email;
     }
 
-    public ProfileModel(String fullName, String age, String proffesion, String annualIncome, String email, boolean car, boolean owningHouse, boolean permanent) {
+    public ProfileModel(String fullName, String age, String proffesion, String annualIncome, String email, boolean smoking, boolean drink, boolean dread, boolean disable) {
         this.fullName = fullName;
         this.age = age;
         this.proffesion = proffesion;
         this.annualIncome = annualIncome;
         this.email = email;
-        this.car = car;
-        this.owningHouse = owningHouse;
-        this.permanent = permanent;
+        this.smoking = smoking;
+        this.drinking = drink;
+        this.dread = dread;
+        this.disable = disable;
     }
 
     public String getFullName() {
@@ -76,28 +78,36 @@ public class ProfileModel {
         this.email = email;
     }
 
-    public boolean getCar() {
-        return car;
+    public boolean isSmoking() {
+        return smoking;
     }
 
-    public void setCar(boolean car) {
-        this.car = car;
+    public void setSmoking(boolean smoking) {
+        this.smoking = smoking;
     }
 
-    public boolean getOwningHouse() {
-        return owningHouse;
+    public boolean isDrinking() {
+        return drinking;
     }
 
-    public void setOwningHouse(boolean owningHouse) {
-        this.owningHouse = owningHouse;
+    public void setDrinking(boolean drinking) {
+        this.drinking = drinking;
     }
 
-    public boolean getPermanent() {
-        return permanent;
+    public boolean isDread() {
+        return dread;
     }
 
-    public void setPermanent(boolean permanent) {
-        this.permanent = permanent;
+    public void setDread(boolean dread) {
+        this.dread = dread;
+    }
+
+    public boolean isDisable() {
+        return disable;
+    }
+
+    public void setDisable(boolean disable) {
+        this.disable = disable;
     }
 
     @Override
@@ -133,9 +143,10 @@ public class ProfileModel {
                 ", proffesion='" + proffesion + '\'' +
                 ", annualIncome='" + annualIncome + '\'' +
                 ", email='" + email + '\'' +
-                ", car='" + car + '\'' +
-                ", owningHouse='" + owningHouse + '\'' +
-                ", permanent='" + permanent + '\'' +
+                ", smoking=" + smoking +
+                ", drinking=" + drinking +
+                ", dread=" + dread +
+                ", disable=" + disable +
                 '}';
     }
 }

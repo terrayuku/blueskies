@@ -19,25 +19,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" android:parentActivityName=".MainActivity">
+        <activity android:name=".Login" android:parentActivityName=".MainActivity" android:label="@string/login">
 
         </activity>
-        <activity android:name=".Registration" android:parentActivityName=".MainActivity">
+        <activity android:name=".Registration" android:parentActivityName=".MainActivity" android:label="@string/join">
 
         </activity>
-        <activity android:name=".Landing" android:parentActivityName=".Login">
+        <activity android:name=".Landing" android:parentActivityName=".Login" android:label="@string/landing">
 
         </activity>
-        <activity android:name=".DesignYourBestLife" android:parentActivityName=".Landing">
+        <activity android:name=".DesignYourBestLife" android:parentActivityName=".Landing" android:label="@string/design">
 
         </activity>
-        <activity android:name=".Profile" android:parentActivityName=".DesignYourBestLife">
+        <activity android:name=".Profile" android:parentActivityName=".DesignYourBestLife" android:label="@string/profile">
 
         </activity>
-        <activity android:name=".Continue" android:parentActivityName=".Profile">
+        <activity android:name=".analytics.UserDashboard" android:parentActivityName=".Landing" android:screenOrientation="landscape" android:label="@string/dashboard">
+
 
         </activity>
-        <activity android:name=".BestLife" android:parentActivityName=".Continue">
+        <activity android:name=".SelectedPolicy" android:parentActivityName=".analytics.UserDashboard" android:label="@string/selected_policy">
+
 
         </activity>
 

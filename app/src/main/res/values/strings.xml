@@ -2,5 +2,15 @@
     <string name="app_name">Blue Skies</string>
     <string name="facebook_app_id">471336793249987</string>
     <string name="fb_login_protocol_scheme">fb471336793249987</string>
+    <string name="login">Login</string>
+    <string name="join">Join Liberty</string>
+    <string name="landing">Landing</string>
+    <string name="design">Design Your Best Life</string>
+    <string name="profile">Complete Profile</string>
+    <string name="best_life">Way To Your Best Life</string>
+    <string name="rewards">Rewards</string>
+    <string name="dashboard">User Dashboard</string>
+    <string name="selected_policy">Selected Policy</string>
+
 
 </resources>

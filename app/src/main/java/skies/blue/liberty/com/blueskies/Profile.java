@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import skies.blue.liberty.com.blueskies.analytics.UserDashboard;
 import skies.blue.liberty.com.blueskies.models.DesignYourBestLifeModel;
 import skies.blue.liberty.com.blueskies.models.ProfileModel;
 import skies.blue.liberty.com.blueskies.models.Utils;
@@ -29,13 +30,15 @@ public class Profile extends AppCompatActivity {
     EditText proffession;
     EditText annualIncome;
     TextView userEmail;
-    CheckBox car;
-    CheckBox owningHouse;
-    CheckBox permanent;
+    CheckBox smoking;
+    CheckBox drinking;
+    CheckBox dread;
+    CheckBox disable;
 
-    boolean isCar;
-    boolean isOwningHouse;
-    boolean isPermanent;
+    boolean isSmoking;
+    boolean isDriking;
+    boolean isDread;
+    boolean isDisable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,44 +52,53 @@ public class Profile extends AppCompatActivity {
         userEmail = (TextView)findViewById(R.id.userEmail);
         userEmail.setText(Utils.readSharedSetting(getApplicationContext(), "email", "liberty-user"));
 
-        car = (CheckBox)findViewById(R.id.ckCar);
-        owningHouse = (CheckBox)findViewById(R.id.ckHouse);
-        permanent = (CheckBox)findViewById(R.id.ckPermanent);
+        smoking = (CheckBox)findViewById(R.id.smoking);
+        drinking = (CheckBox)findViewById(R.id.drinking);
+        dread = (CheckBox)findViewById(R.id.dread);
+        disable = (CheckBox)findViewById(R.id.disable);
 
-        car.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        smoking.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 //                Toast.makeText(getApplicationContext() , b + "" , Toast.LENGTH_SHORT).show();
-                isCar = b;
+                isSmoking = b;
             }
         });
 
-        owningHouse.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        drinking.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 //                Toast.makeText(getApplicationContext() , b + "" , Toast.LENGTH_SHORT).show();
-                isOwningHouse = b;
+                isDriking = b;
             }
         });
 
-        permanent.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        dread.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 //                Toast.makeText(getApplicationContext() , b + "" , Toast.LENGTH_SHORT).show();
-                isPermanent = b;
+                isDread = b;
+            }
+        });
+
+        disable.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+//                Toast.makeText(getApplicationContext() , b + "" , Toast.LENGTH_SHORT).show();
+                isDisable = b;
             }
         });
     }
 
     public void btnContinue(View view) {
-        Intent intent = new Intent(this, BestLife.class);
+        Intent intent = new Intent(this, UserDashboard.class);
 
         if(fullName.getText().toString() != null && age.getText().toString() != null && proffession.getText().toString() != null
                 && annualIncome.getText().toString() != null) {
 
             ProfileModel userProfile = new ProfileModel(fullName.getText().toString(),
                     age.getText().toString(), proffession.getText().toString(), annualIncome.getText().toString(), userEmail.getText().toString(),
-                    isCar, isOwningHouse, isPermanent);
+                    isSmoking, isDriking, isDread, isDisable);
 
             try {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();

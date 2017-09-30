@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -25,6 +26,7 @@
             android:layout_marginTop="71dp"
             android:fontFamily="monospace"
             android:text="Email"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp"
             android:typeface="serif" />
 
@@ -38,7 +40,8 @@
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="si@example.com"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/cardview_shadow_start_color" />
 
         <TextView
             android:id="@+id/lblPassword"
@@ -49,6 +52,7 @@
             android:layout_below="@+id/txtEmail"
             android:layout_marginTop="34dp"
             android:text="Password"
+            android:textColor="@color/cardview_light_background"
             android:textSize="24sp"
             android:typeface="monospace" />
 
@@ -66,28 +70,26 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtPassword"
-            android:layout_alignStart="@+id/txtPassword"
-            android:layout_below="@+id/txtPassword"
-            android:layout_marginLeft="49dp"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="51dp"
+            android:layout_marginTop="64dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="landing"
-            android:text="Login" />
+            android:text="Login"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/txtPassword"
+            android:layout_alignLeft="@+id/txtError"
+            android:layout_alignStart="@+id/txtError" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/lblEmail"
+            android:layout_marginTop="15dp"
+            android:text="Please Login With Your Details"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="16sp"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/lblEmail"
-            android:layout_marginLeft="31dp"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="19dp"
-            android:text="Please Login With You Details"
-            android:textSize="16sp" />
+            android:layout_alignRight="@+id/txtEmail"
+            android:layout_alignEnd="@+id/txtEmail" />
 
         <TextView
             android:id="@+id/txtError"
