@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back__96x96">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="27dp"
+            android:text="3 Products"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="21dp"
+            android:text="1. Life Cover"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_toRightOf="@+id/textView10"
+            android:text="3 years"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignBottom="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignRight="@+id/textView13"
+            android:text="Years"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/time"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:text="Loyalty"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignTop="@+id/textView13"
+            android:text="12"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="21dp"
+            android:text="2. Home Ins"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.7 years"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_alignEnd="@+id/textView16"
+            android:layout_alignRight="@+id/textView16"
+            android:text="9"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="22dp"
+            android:text="3 Car Ins"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_alignEnd="@+id/textView18"
+            android:layout_alignRight="@+id/textView18"
+            android:text="1y 1m"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignTop="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:text="5"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView20"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_below="@+id/textView20"
+            android:layout_marginTop="54dp"
+            android:text="Totals"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView23"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignStart="@+id/textView18"
+            android:text="5.81years"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView24"
+            android:layout_alignEnd="@+id/textView22"
+            android:layout_alignRight="@+id/textView22"
+            android:text="26"
+            android:textColor="@color/cardview_light_background" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_toLeftOf="@+id/textView24"
+            android:layout_toStartOf="@+id/textView24"
+            android:background="@color/com_facebook_button_login_background_color"
+            android:text="View Claim"
+            android:textColor="@color/cardview_light_background" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/com_facebook_button_background"
+            android:text="Claim "
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/textView25"
+            android:layout_toStartOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:text="R 100"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_below="@+id/textView23"
+            android:layout_marginTop="38dp"
+            android:text="Treat your life like a business"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -37,10 +37,15 @@ public class Landing extends AppCompatActivity {
         intent.putExtra("Profile", "Profile");
         startActivity(intent);
     }
-
     public void bestLife(View view) {
         Intent intent = new Intent(this, UserDashboard.class);
         intent.putExtra("UserDashboard", "UserDashboard");
+        startActivity(intent);
+    }
+
+    public void reward(View view) {
+        Intent intent = new Intent(this, Reward.class);
+        intent.putExtra("Reward", "Reward");
         startActivity(intent);
     }
 
