@@ -12,16 +12,16 @@
             android:id="@+id/bntDesign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnReward"
+            android:layout_alignLeft="@+id/btnBestLife"
+            android:layout_alignRight="@+id/btnReward"
+            android:layout_alignStart="@+id/btnBestLife"
+            android:layout_below="@+id/userEmail"
             android:layout_marginTop="25dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="design_best_life"
             android:text="Design Your Best Life"
-            android:textColor="@color/cardview_light_background"
-            android:layout_below="@+id/userEmail"
-            android:layout_alignRight="@+id/btnReward"
-            android:layout_alignEnd="@+id/btnReward"
-            android:layout_alignLeft="@+id/btnBestLife"
-            android:layout_alignStart="@+id/btnBestLife" />
+            android:textColor="@color/cardview_light_background" />
 
         <Button
             android:id="@+id/btnCompleteProfile"

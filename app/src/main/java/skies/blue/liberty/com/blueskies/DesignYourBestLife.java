@@ -22,7 +22,7 @@ public class DesignYourBestLife extends AppCompatActivity {
     EditText home;
     EditText health;
     EditText finance;
-    TextView userEmail;
+//    TextView userEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,8 @@ public class DesignYourBestLife extends AppCompatActivity {
         home = (EditText)findViewById(R.id.txtHome);
         health = (EditText)findViewById(R.id.txtHealth);
         finance = (EditText)findViewById(R.id.txtFinance);
-        userEmail = (TextView)findViewById(R.id.userEmail);
-        userEmail.setText(Utils.readSharedSetting(getApplicationContext(), "email", "liberty-user"));
+//        userEmail = (TextView)findViewById(R.id.userEmail);
+//        userEmail.setText(Utils.readSharedSetting(getApplicationContext(), "email", "liberty-user"));
 
     }
 
@@ -42,7 +42,7 @@ public class DesignYourBestLife extends AppCompatActivity {
         if(home.getText().toString() != null && health.getText().toString() != null && finance.getText().toString() != null) {
 
             DesignYourBestLifeModel designYourBestLifeModel = new DesignYourBestLifeModel(home.getText().toString(),
-                    health.getText().toString(), finance.getText().toString(), userEmail.getText().toString());
+                    health.getText().toString(), finance.getText().toString(), "simtyuku@gmail.com");
 
             try {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();

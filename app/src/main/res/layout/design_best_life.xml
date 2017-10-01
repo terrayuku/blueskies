@@ -8,104 +8,170 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextW1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="37dp"
-            android:text="Dream Home"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/txtHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView"
-            android:layout_below="@+id/textView"
-            android:layout_marginTop="17dp"
-            android:ems="10"
-            android:hint="3 Bed Room House"
-            android:inputType="textPersonName"
-            android:textColor="@color/cardview_light_background" />
+            <EditText
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Dream"
+                android:inputType="textPersonName"
+                android:textColor="@color/cardview_light_background" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtHome"
-            android:layout_alignStart="@+id/txtHome"
-            android:layout_below="@+id/txtHome"
-            android:layout_marginTop="30dp"
-            android:text="Health"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/txtHealth"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextW2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_below="@+id/textView2"
-            android:layout_marginTop="24dp"
-            android:ems="10"
-            android:hint="life insurance"
-            android:inputType="textPersonName" />
+            android:layout_below="@+id/editTextW1">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtHealth"
-            android:layout_alignStart="@+id/txtHealth"
-            android:layout_below="@+id/txtHealth"
-            android:layout_marginTop="37dp"
-            android:text="Financial"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="When"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/txtFinance"
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextW3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView4"
-            android:layout_alignStart="@+id/textView4"
-            android:layout_below="@+id/textView4"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="Retirement Policy"
-            android:inputType="textPersonName" />
+            android:layout_below="@+id/editTextW2">
+
+            <EditText
+                android:id="@+id/txtFinance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Where"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="28dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginStart="28dp"
-            android:layout_toEndOf="@+id/txtFinance"
-            android:layout_toRightOf="@+id/txtFinance"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
             android:background="@color/colorPrimaryDark"
             android:onClick="profile"
             android:text="Claim It!"
             android:textColor="@color/cardview_light_background" />
 
-        <TextView
-            android:id="@+id/userEmail"
+        <CheckBox
+            android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="14dp"
-            android:layout_toEndOf="@+id/textView4"
-            android:layout_toRightOf="@+id/textView4" />
+            android:layout_marginTop="39dp"
+            android:text="I have "
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/editTextW3"
+            android:layout_alignLeft="@+id/checkBox4"
+            android:layout_alignStart="@+id/checkBox4" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expecting Child ?"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignBaseline="@+id/checkBox"
+            android:layout_alignBottom="@+id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dreaming of Buying Car ?"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/checkBox2"
+            android:layout_alignLeft="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have it"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignBaseline="@+id/checkBox3"
+            android:layout_alignBottom="@+id/checkBox3"
+            android:layout_toRightOf="@+id/checkBox3"
+            android:layout_toEndOf="@+id/checkBox3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkBox4"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignRight="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignLeft="@+id/checkBox4"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignStart="@+id/checkBox4"
+            android:layout_below="@+id/checkBox4"
+            android:ems="10"
+            android:hint="2"
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox3"
+            android:layout_alignStart="@+id/checkBox3"
+            android:layout_below="@+id/editText3"
+            android:text="Join Gym ?"
+            android:textColor="@color/cardview_light_background" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:text="Already Gyming"
+            android:textColor="@color/cardview_light_background" />
 
     </RelativeLayout>
 </LinearLayout>
